@@ -13,7 +13,7 @@ export default function MenuSection() {
       <div className="max-w-4xl mx-auto text-center mb-20">
         <h2 className="text-amber-600 font-semibold tracking-widest uppercase mb-3 text-sm">The Menu</h2>
         <h3 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6">Seasonal Favorites</h3>
-        <p className="text-slate-600 text-lg">A curated selection of our chef's most celebrated creations, prepared with the finest local ingredients.</p>
+        <p className="text-slate-600 text-lg">A curated selection of our chef&apos;s most celebrated creations, prepared with the finest local ingredients.</p>
       </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-16">
         {menuItems.map((item, idx) => (

@@ -24,7 +24,7 @@ export default function AboutSection() {
             className="w-full h-full object-cover rounded-3xl shadow-2xl"
           />
           <div className="absolute -bottom-6 -left-6 bg-amber-100 p-8 rounded-2xl shadow-lg hidden md:block">
-            <p className="font-serif text-3xl text-amber-900">"Authentic flavor in every bite."</p>
+            <p className="font-serif text-3xl text-amber-900">&quot;Authentic flavor in every bite.&quot;</p>
           </div>
         </div>
       </div>
