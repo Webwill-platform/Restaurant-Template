@@ -7,7 +7,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self' https://*.webwill.com http://localhost:3000",
+            value: "frame-ancestors 'self' https://*.webwill.com https://webwill.vercel.app https://*.vercel.app http://localhost:3000",
           },
         ],
       },
