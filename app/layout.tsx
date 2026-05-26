@@ -19,16 +19,19 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         {children}
+        {/* Webwill Editor Bridge — enables visual editing */}
         <script
-          dangerouslySetInnerHTML={{ __html: `
-            if (window.self !== window.top) {
-              const s = document.createElement('script')
-              s.src = window.location.origin.includes('localhost')
-                ? 'http://localhost:3000/editor-bridge.js'
-                : 'https://webwill.com/editor-bridge.js'
-              document.body.appendChild(s)
-            }
-          `}}
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                if (window.self === window.top) return;
+                var s = document.createElement('script');
+                s.src = 'https://webwill.vercel.app/editor-bridge.js';
+                s.async = true;
+                document.body.appendChild(s);
+              })();
+            `,
+          }}
         />
       </body>
     </html>
